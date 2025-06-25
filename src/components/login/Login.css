@@ -1,0 +1,199 @@
+.login-page-redesigned {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #38A4DD 0%, #1a2238 100%);
+  overflow: hidden;
+}
+
+.login-container-redesigned {
+  width: 100vw;
+  max-width: 900px;
+  min-height: 500px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.login-branding-redesigned {
+  flex: 1;
+  background: linear-gradient(135deg, #38A4DD 0%, #1a2238 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.logo-redesigned {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 2rem;
+}
+
+.logo-redesigned img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.login-branding-redesigned h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.login-branding-redesigned p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.login-form-container-redesigned {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+  background: #fff;
+}
+
+.login-form-container-redesigned h2 {
+  font-size: 2rem;
+  color: #1a2238;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login-toggle-redesigned {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #38A4DD;
+  background: transparent;
+  color: #38A4DD;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.toggle-btn.active {
+  background: #38A4DD;
+  color: #fff;
+}
+
+.input-group-redesigned {
+  margin-bottom: 1.5rem;
+}
+
+.input-group-redesigned input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group-redesigned input:focus {
+  border-color: #38A4DD;
+  outline: none;
+}
+
+.error-message-redesigned,
+.error-text-redesigned {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.btn-submit-redesigned {
+  width: 100%;
+  padding: 1rem;
+  background: #38A4DD;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit-redesigned:hover {
+  background: #2a7f9e;
+}
+
+.register-link-redesigned {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.register-link-redesigned a {
+  color: #38A4DD;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link-redesigned a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .login-container-redesigned {
+    flex-direction: column;
+    max-width: 98vw;
+    min-height: unset;
+    border-radius: 12px;
+  }
+  .login-branding-redesigned, .login-form-container-redesigned {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-container-redesigned {
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+  }
+
+  .login-form-container-redesigned {
+    padding: 1.5rem;
+  }
+
+  .login-form-container-redesigned h2 {
+    font-size: 1.75rem;
+  }
+
+  .toggle-btn {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .input-group-redesigned input {
+    padding: 0.75rem;
+  }
+
+  .btn-submit-redesigned {
+    padding: 0.75rem;
+  }
+} 

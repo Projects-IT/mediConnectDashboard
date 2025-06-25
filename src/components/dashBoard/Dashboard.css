@@ -1,0 +1,244 @@
+.dashboard-redesigned {
+  padding: 1.5rem;
+  min-height: calc(100vh - 2rem);
+}
+
+.dashboard-header-redesigned {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-header-redesigned h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header-redesigned p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.user-welcome-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.user-welcome-avatar img:hover {
+  transform: scale(1.05);
+}
+
+.stats-grid-redesigned {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card-redesigned {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card-redesigned:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon-redesigned {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.stat-card-redesigned.blue .stat-icon-redesigned {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.stat-card-redesigned.green .stat-icon-redesigned {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.stat-card-redesigned.orange .stat-icon-redesigned {
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+}
+
+.stat-info-redesigned p {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.stat-info-redesigned h3 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.recent-activity-redesigned {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.recent-activity-redesigned h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.recent-activity-redesigned ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-activity-redesigned li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.recent-activity-redesigned li:last-child {
+  border-bottom: none;
+}
+
+.activity-user {
+  font-weight: 600;
+  color: #333;
+}
+
+.activity-action {
+  color: #666;
+}
+
+.activity-time {
+  color: #999;
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .stats-grid-redesigned {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-redesigned {
+    padding: 1rem;
+  }
+  
+  .dashboard-header-redesigned {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 1.2rem;
+  }
+  
+  .dashboard-header-redesigned > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .user-welcome-avatar {
+    margin-top: 1rem;
+  }
+
+  .stats-grid-redesigned {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .recent-activity-redesigned li {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .activity-time {
+    text-align: left;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+  
+  .stat-card-redesigned {
+    padding: 1.2rem;
+  }
+  
+  .stat-icon-redesigned {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-redesigned {
+    padding: 0.75rem;
+  }
+  
+  .dashboard-header-redesigned,
+  .stat-card-redesigned,
+  .recent-activity-redesigned {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .dashboard-header-redesigned h1 {
+    font-size: 1.5rem;
+  }
+  
+  .stat-info-redesigned h3 {
+    font-size: 1.3rem;
+  }
+  
+  .recent-activity-redesigned h2 {
+    font-size: 1.1rem;
+  }
+}
+
+.no-data-message {
+  text-align: center;
+  color: #6c757d;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  font-style: italic;
+}
